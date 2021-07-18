@@ -1,0 +1,8 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+
+
+.footer-menu {
+    position: fixed; 
+    bottom: 0;
+}
