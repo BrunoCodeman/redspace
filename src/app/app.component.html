@@ -309,26 +309,17 @@
 
 <div class="content" role="main"></div>
 <router-outlet></router-outlet>
-<div id="footer_menu" class="footer-menu">
-  <div>
-    <button mat-icon-button aria-label="People" [routerLink]="['/people']">
-      <mat-icon>people_outline</mat-icon>
-      <mat-divider></mat-divider>
-      <span>People</span>
-    </button>
-  </div>
-  <div>
-    <button mat-icon-button aria-label="movies" [routerLink]="['/movies']">
-      <mat-icon>movies</mat-icon>
-      <mat-divider></mat-divider>
-      <span>Movies</span>
-    </button>
-  </div>
-  <div>
-    <button mat-icon-button aria-label="planets" [routerLink]="['/planets']">
-      <mat-icon>public</mat-icon>
-      <mat-divider></mat-divider>
-      <span>Planets</span>
-    </button>
-  </div>
-</div>
+<ngx-bottom-nav color="primary" class="footer-menu">
+  <button ngx-bottom-nav label="People" routerLink="/people" >
+    <mat-icon ngxBottomNavIcon>people_outline</mat-icon>
+  </button>
+
+  <button ngx-bottom-nav label="Movies" routerLink="/movies">
+    <mat-icon ngxBottomNavIcon>movies</mat-icon>
+  </button>
+
+  <button ngx-bottom-nav label="Planets" routerLink="/planets">
+    <mat-icon ngxBottomNavIcon>public</mat-icon>
+  </button>
+</ngx-bottom-nav>
+

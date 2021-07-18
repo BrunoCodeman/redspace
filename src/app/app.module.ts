@@ -12,6 +12,7 @@ import { PeopleComponent } from './components/smart/people/people.component';
 import { MoviesComponent } from './components/smart/movies/movies.component';
 import { PlanetsComponent } from './components/smart/planets/planets.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { BottomNavModule } from 'ngx-bottom-nav';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    BottomNavModule
 
   ],
   providers: [],
