@@ -1,0 +1,10 @@
+@use 'sass:map';
+@use '~@angular/material' as mat;
+
+
+.footer-menu {
+    display: flex; 
+    justify-content: space-around; 
+    bottom: 0;
+    height: fit-content;
+}
