@@ -296,13 +296,16 @@
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <img width="80" alt="Angular Logo"
+<mat-toolbar color="primary" role="banner">
+  <mat-toolbar-row>
+    <img width="80" alt="Angular Logo"
     src="../assets/447-4476368_star-wars-logo-png-logo-do-star-wars.png"
     [routerLink]="['/']" />
+    <div class="spacer"></div>
   <span>Star Wars Characters App</span>
   <div class="spacer"></div>
-</div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
 <div class="content" role="main"></div>
 <router-outlet></router-outlet>

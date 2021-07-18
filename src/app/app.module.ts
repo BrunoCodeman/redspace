@@ -11,7 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PeopleComponent } from './components/smart/people/people.component';
 import { MoviesComponent } from './components/smart/movies/movies.component';
 import { PlanetsComponent } from './components/smart/planets/planets.component';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { PlanetsComponent } from './components/smart/planets/planets.component';
     AppRoutingModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatToolbarModule
 
   ],
   providers: [],
