@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./people.component.scss']
 })
 export class PeopleComponent implements OnInit {
-
+  url = "";
   constructor() { }
 
   ngOnInit(): void {
