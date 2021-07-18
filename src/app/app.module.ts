@@ -13,23 +13,41 @@ import { MoviesComponent } from './components/smart/movies/movies.component';
 import { PlanetsComponent } from './components/smart/planets/planets.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BottomNavModule } from 'ngx-bottom-nav';
+import { ItemSearchComponent } from './components/presentational/item-search/item-search.component';
+import { ItemListComponent } from './components/presentational/item-list/item-list.component';
+import { MatListModule } from '@angular/material/list';
+import { ItemComponent } from './components/presentational/item/item.component';
+import { MatCardModule } from '@angular/material/card';
+import { PersonDetailComponent } from './components/presentational/person-detail/person-detail.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PeopleComponent,
     MoviesComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    ItemListComponent,
+    ItemSearchComponent,
+    ItemComponent,
+    PersonDetailComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
     MatToolbarModule,
-    BottomNavModule
+    BottomNavModule,
+    MatListModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
 
   ],
   providers: [],
