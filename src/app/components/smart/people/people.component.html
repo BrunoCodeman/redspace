@@ -1,1 +1,3 @@
-<item-search [url]="url"></item-search>
+<item-search (searchTerm)="searchPeople($event)" [searchResults]="_people">
+    
+</item-search>
