@@ -11,7 +11,7 @@ export class BaseService {
   _searchUrl!:string;
 
   constructor(public http: HttpClient) {
-    const _baseUrl = "https://swapi.dev/api/";
+    const _baseUrl = "https://swapi.dev/api";
     const className = this.constructor.name.toLowerCase().replace("service","");
     this._url = `${_baseUrl}/${className}/`;
     this._searchUrl=`${this._url}?search=`;
