@@ -3,11 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/smart/home/home.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatIconModule} from '@angular/material/icon';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PeopleComponent } from './components/smart/people/people.component';
 import { FilmsComponent } from './components/smart/films/films.component';
 import { PlanetsComponent } from './components/smart/planets/planets.component';
@@ -27,11 +26,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BaseService } from './services/base-service.service';
 import { PeopleService } from './services/people.service';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     PeopleComponent,
     FilmsComponent,
     PlanetsComponent,
