@@ -1,0 +1,10 @@
+<div style="width: 100%; align-items: center;">
+  <mat-form-field color="primary" style="width: 100%;">
+    <mat-label>Search Content</mat-label>
+    <input class="text-search" matInput type="text" [(ngModel)]="value" (keyup)="typeSearch($event)">
+    <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="clearData($event)">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <item-list [items]="searchResults"></item-list>
+</div>

@@ -1,0 +1,20 @@
+<div>
+    <ng-container *ngIf="items | async as myList">
+        <div *ngIf="isLoadingData">
+            <mat-progress-spinner color="primary" mode="indeterminate">
+            </mat-progress-spinner>
+        </div>
+        <div *ngIf="!isLoadingData && myList.length < 1">
+            <p class="not-found">No results found</p>
+        </div>
+
+        <div>
+            <mat-list *ngFor="let item of items | async">
+                <mat-list-item>
+                    <item [data]="item"></item>
+                </mat-list-item>
+            </mat-list>
+        </div>
+    </ng-container>
+
+</div>

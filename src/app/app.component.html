@@ -306,20 +306,21 @@
   <div class="spacer"></div>
   </mat-toolbar-row>
 </mat-toolbar>
+<router-outlet></router-outlet>
 
 <div class="content" role="main"></div>
-<router-outlet></router-outlet>
-<ngx-bottom-nav color="primary" class="footer-menu">
-  <button ngx-bottom-nav label="People" routerLink="/people" >
-    <mat-icon ngxBottomNavIcon>people_outline</mat-icon>
-  </button>
-
-  <button ngx-bottom-nav label="Movies" routerLink="/movies">
-    <mat-icon ngxBottomNavIcon>movies</mat-icon>
-  </button>
-
-  <button ngx-bottom-nav label="Planets" routerLink="/planets">
-    <mat-icon ngxBottomNavIcon>public</mat-icon>
-  </button>
-</ngx-bottom-nav>
-
+<div>
+  <ngx-bottom-nav color="primary" class="footer-menu">
+    <button ngx-bottom-nav label="People" routerLink="/people" >
+      <mat-icon ngxBottomNavIcon>people_outline</mat-icon>
+    </button>
+  
+    <button ngx-bottom-nav label="Movies" routerLink="/movies">
+      <mat-icon ngxBottomNavIcon>movies</mat-icon>
+    </button>
+  
+    <button ngx-bottom-nav label="Planets" routerLink="/planets">
+      <mat-icon ngxBottomNavIcon>public</mat-icon>
+    </button>
+  </ngx-bottom-nav>
+</div>
