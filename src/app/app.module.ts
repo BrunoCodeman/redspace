@@ -28,6 +28,7 @@ import { BaseService } from './services/base-service.service';
 import { PeopleService } from './services/people.service';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { PlanetDetailComponent } from './components/presentational/planet-detail/planet-detail.component';
+import { FilmDetailComponent } from './components/presentational/film-detail/film-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { PlanetDetailComponent } from './components/presentational/planet-detail
     ItemComponent,
     PersonDetailComponent,
     PlanetDetailComponent,
+    FilmDetailComponent,
   ],
   imports: [
     BrowserModule,
