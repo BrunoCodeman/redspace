@@ -22,7 +22,7 @@ export class PlanetsComponent implements OnInit {
       const items = new Array<Item>();
       data.results.forEach(e => items.push({
         icon: "public", model:e,
-        route: "detail", title: e.name
+        route: "planets/detail", title: e.name
       }));
       this._planets.next(items);
     });    
