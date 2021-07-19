@@ -23,7 +23,7 @@ export class PeopleComponent implements OnInit {
       const items = new Array<Item>();
       data.results.forEach(e => items.push({
         icon: "people_outline", model:e,
-        route: "people", title: e.name
+        route: "person", title: e.name
       }));
       this._people.next(items);
     });    
