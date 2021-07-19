@@ -9,3 +9,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## PS:
+I tried to publish the code at [GitHub Pages](https://brunocodeman.github.io/redspace/) and [Heroku](https://redspace-angular.herokuapp.com/), but for some reason `ng build` is addint a "t" character in the middle of the URL so unfortunatelly it's only working when you run locally.
