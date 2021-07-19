@@ -1,5 +1,5 @@
 export interface Planet {
-    title:string
+    name:string
     terrain:string
     population:string
 }
