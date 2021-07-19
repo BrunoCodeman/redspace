@@ -27,6 +27,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BaseService } from './services/base-service.service';
 import { PeopleService } from './services/people.service';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { PlanetDetailComponent } from './components/presentational/planet-detail/planet-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     ItemSearchComponent,
     ItemComponent,
     PersonDetailComponent,
+    PlanetDetailComponent,
   ],
   imports: [
     BrowserModule,
