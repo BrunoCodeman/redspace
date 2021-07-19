@@ -23,7 +23,7 @@ export class FilmsComponent implements OnInit {
       const items = new Array<Item>();
       data.results.forEach(e => items.push({
         icon: "movies", model:e,
-        route: "film", title: e.title
+        route: "movies/detail", title: e.title
       }));
       this._films.next(items);
     });    
