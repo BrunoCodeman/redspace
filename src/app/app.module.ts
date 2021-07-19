@@ -9,7 +9,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PeopleComponent } from './components/smart/people/people.component';
-import { MoviesComponent } from './components/smart/movies/movies.component';
+import { FilmsComponent } from './components/smart/films/films.component';
 import { PlanetsComponent } from './components/smart/planets/planets.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BottomNavModule } from 'ngx-bottom-nav';
@@ -33,7 +33,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     AppComponent,
     HomeComponent,
     PeopleComponent,
-    MoviesComponent,
+    FilmsComponent,
     PlanetsComponent,
     ItemListComponent,
     ItemSearchComponent,
