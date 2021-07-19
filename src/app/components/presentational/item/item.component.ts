@@ -1,17 +1,18 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { Item } from '../../../models/item'
 @Component({
   selector: 'item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  @Input() icon = "help";
-  @Input() title = "Item";
-  @Input() link = "";
-  constructor() { }
+  @Input() data: Item = {} as Item;
+  constructor(public router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  navigate(){
+    this.router.navigate([`/${this.data.route}`], {state:{data: this.data.model}});
   }
-
 }
