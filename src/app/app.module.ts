@@ -22,6 +22,12 @@ import { PersonDetailComponent } from './components/presentational/person-detail
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BaseService } from './services/base-service.service';
+import { PeopleService } from './services/people.service';
+import {MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,9 +54,12 @@ import { MatInputModule } from '@angular/material/input';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
+    MatSidenavModule
 
   ],
-  providers: [],
+  providers: [HttpClient, BaseService, PeopleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
