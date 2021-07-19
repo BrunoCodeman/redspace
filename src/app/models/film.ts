@@ -1,4 +1,4 @@
-export interface Movie {
+export interface Film {
     title:string
     director:string
     producer:string
